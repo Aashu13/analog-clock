@@ -1,0 +1,96 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+.Timer {
+    width: 320px;
+    height: 320px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    position: relative;
+    top: 250px;
+    left: 35%;
+}
+
+.clock_face {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background: blueviolet;
+}
+
+.hand {
+    width: 35%;
+    height: 4px;
+    background: red;
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.holder {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    top: 130px;
+    left: 124px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.hour_niddle {
+    height: 6px;
+    background: green;
+}
+
+.second_niddle {
+    height: 2px !important;
+    background-color: #000;
+}
+
+.twelve,
+.three,
+.six,
+.nine {
+    position: relative;
+    top: 10px;
+    left: 124px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.three {
+    width: auto;
+    position: relative;
+    top: 105px;
+    left: 250px
+}
+
+.nine {
+    position: relative;
+    top: 85px;
+    left: 20px;
+}
+
+.six {
+    position: relative;
+    top: 170px;
+    left: 130px;
+}
+
+.three {
+    position: relative;
+    right: 100px !important;
+}
